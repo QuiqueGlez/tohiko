@@ -6,6 +6,9 @@ import Opiniones from "@/components/sections/Opiniones";
 import Coverage  from "@/components/sections/Coverage";
 import  FAQ  from "@/components/sections/FAQ";
 import  Contact  from "@/components/sections/Contact";
+import Projects from "@/components/sections/Projects";
+import ShowerSwap from "@/components/sections/ShowerSwap";
+import KitchensBathrooms from "@/components/sections/KitchensBathrooms";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import {FloatingCallButton} from "@/components/ui/FloatingCallButton";
@@ -56,6 +59,9 @@ export default function Home() {
      <Hero></Hero>
      <Services></Services>
      <Testimonials></Testimonials>
+     <Projects></Projects>
+     <ShowerSwap></ShowerSwap>
+     <KitchensBathrooms></KitchensBathrooms>
      <Coverage></Coverage>
      <Opiniones></Opiniones>
      <FAQ></FAQ>

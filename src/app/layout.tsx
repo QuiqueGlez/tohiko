@@ -12,8 +12,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Cerrajero 24 horas en Coruña | Servicio Urgente",
-  description: "Servicio certificado de cerrajería en Coruña con garantía escrita. Atención inmediata las 24h, festivos incluidos.",
+  title: "Reformas integrales en Granada | Reformas Granada Pro",
+  description: "Empresa de reformas en Granada con equipo propio, presupuesto cerrado, cronograma y garantía. Gestión integral de licencias y supervisión diaria.",
 };
 
 export default function RootLayout({

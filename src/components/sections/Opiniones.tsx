@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
 
@@ -5,35 +7,67 @@ const Opiniones: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'María López',
-      location: 'Teis, Vigo',
+      name: 'Sara',
+      location: 'Zaidín, Granada',
       rating: 5,
-      content: 'Llamé a estos fontaneros en Vigo a las 2am por una fuga de agua y en 25 minutos ya estaban aquí. Solucionaron el problema sin necesidad de hacer obras. ¡Son los mejores fontaneros 24 horas que he encontrado!',
-      date: '15/05/2023'
+      content: 'La obra empezó el lunes y el viernes ya estaba todo como prometieron — sin polvo y con la cocina de mis sueños.',
+      date: '15/05/2024'
     },
     {
       id: 2,
-      name: 'Carlos Rodríguez',
-      location: 'Coia, Vigo',
+      name: 'Carlos',
+      location: 'Realejo, Granada',
       rating: 5,
-      content: 'Necesitaba un fontanero a domicilio en Vigo para cambiar las tuberías de mi casa antigua. El presupuesto fue claro desde el principio y el trabajo impecable. No ensuciaron nada y fueron muy profesionales.',
-      date: '22/04/2023'
+      content: 'Los únicos albañiles que llegan antes que tú al portal.',
+      date: '22/04/2024'
     },
     {
       id: 3,
-      name: 'Ana Lopez',
-      location: 'Vigo Centro',
-      rating: 4,
-      content: 'Contratamos su servicio de fontanería en Vigo para el mantenimiento de nuestro edificio. En 3 años han resuelto todas nuestras urgencias, incluyendo reparaciones de bajantes, con rapidez y eficacia.',
-      date: '03/06/2023'
+      name: 'Lucía',
+      location: 'Armilla, Granada',
+      rating: 5,
+      content: 'Presupuesto cerrado y cumplieron plazos. Acabados impecables en el baño.',
+      date: '10/03/2024'
     },
     {
       id: 4,
-      name: 'Ana Martínez',
-      location: 'Navia, Vigo',
+      name: 'Javier',
+      location: 'La Zubia, Granada',
       rating: 5,
-      content: 'El fontanero que vino a instalarme el baño nuevo entendió perfectamente lo que quería. Entre todos los fontaneros en Vigo que consulté, fueron los que ofrecieron mejor relación calidad-precio. ¡Resultado perfecto!',
-      date: '30/05/2023'
+      content: 'Coordinación perfecta de gremios. Cero sorpresas y comunicación diaria.',
+      date: '28/02/2024'
+    },
+    {
+      id: 5,
+      name: 'Elena',
+      location: 'Albolote, Granada',
+      rating: 4,
+      content: 'Rehabilitación con aislamiento y aerotermia. Se nota el ahorro en energía.',
+      date: '12/01/2024'
+    },
+    {
+      id: 6,
+      name: 'Miguel',
+      location: 'Granada Centro',
+      rating: 5,
+      content: 'Diseño 3D y ejecución tal cual. Recomiendo 100%.',
+      date: '18/12/2023'
+    },
+    {
+      id: 7,
+      name: 'Natalia',
+      location: 'Motril, Granada',
+      rating: 5,
+      content: 'Cambio de bañera por plato de ducha en 48h. Limpieza final excelente.',
+      date: '02/12/2023'
+    },
+    {
+      id: 8,
+      name: 'Álvaro',
+      location: 'Churriana, Granada',
+      rating: 5,
+      content: 'Ventanas PVC y nueva cocina. Equipo serio y muy cuidadoso.',
+      date: '20/11/2023'
     }
   ];
 
@@ -52,9 +86,9 @@ const Opiniones: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="relative inline-block">
               <span className="absolute inset-x-0 bottom-2 h-3 bg-blue-200/50 z-0"></span>
-              <span className="relative z-10">Opiniones Reales</span>
+              <span className="relative z-10">Opiniones reales: la mejor garantía</span>
             </span>
-            <br />de Nuestros <span className="text-blue-600">Clientes en Vigo</span>
+            <br />de nuestras <span className="text-blue-600">reformas integrales en Granada</span>
           </h2>
           <div className="flex justify-center items-center">
             <div className="flex mr-4">
@@ -62,52 +96,56 @@ const Opiniones: React.FC = () => {
                 <FaStar key={i} className="text-yellow-400 text-xl" />
               ))}
             </div>
-            <span className="text-gray-600 font-medium">4.9/5 basado en 127 opiniones</span>
+            <span className="text-gray-600 font-medium">+300 clientes | 15+ años | 97% satisfacción</span>
           </div>
         </div>
 
-        {/* Grid de testimonios */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
-          {testimonials.map((testimonial) => (
-            <div 
-              key={testimonial.id} 
-              className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between"
-            >
-              <div className="p-6 ">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="flex items-center">
-                    <div>
-                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.location}</p>
+        {/* Carrusel de testimonios (auto-scroll) */}
+        <div className="group relative mb-16 overflow-hidden">
+          <div className="flex gap-6 w-max animate-[opiniones-marquee_60s_linear_infinite] group-hover:[animation-play-state:paused]">
+            {[...testimonials, ...testimonials].map((testimonial, idx) => (
+              <div 
+                key={`${testimonial.id}-${idx}`}
+                className="min-w-[280px] md:min-w-[320px] bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between"
+              >
+                <div className="p-6 ">
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex items-center">
+                      <div>
+                        <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                        <p className="text-sm text-gray-500">{testimonial.location}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center bg-blue-50 px-2 py-1 rounded">
+                      <FaStar className="text-yellow-400 mr-1" />
+                      <span className="font-bold text-gray-800">{testimonial.rating}</span>
                     </div>
                   </div>
-                  <div className="flex items-center bg-blue-50 px-2 py-1 rounded">
-                    <FaStar className="text-yellow-400 mr-1" />
-                    <span className="font-bold text-gray-800">{testimonial.rating}</span>
+                  <div className="relative mb-4">
+                    <FaQuoteLeft className="absolute -top-2 left-0 text-blue-100 text-3xl" />
+                    <p className="text-gray-600 pl-8 relative z-10 ml-2">{testimonial.content}</p>
+                  </div>
+                  <div className="text-sm text-gray-400">{testimonial.date}</div>
+                </div>
+                <div className="bg-gray-50 px-6 py-3 border-t border-gray-100">
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="#34A853"/>
+                      <path d="M12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6ZM12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12Z" fill="#34A853"/>
+                      <path d="M12 16C9.33 16 4 17.34 4 20V21C4 21.55 4.45 22 5 22H19C19.55 22 20 21.55 20 21V20C20 17.34 14.67 16 12 16Z" fill="#34A853"/>
+                    </svg>
+                    <span className="text-sm text-gray-600">Publicado en Google</span>
                   </div>
                 </div>
-                
-                <div className="relative mb-4">
-                  <FaQuoteLeft className="absolute -top-2 left-0 text-blue-100 text-3xl" />
-                  <p className="text-gray-600 pl-8 relative z-10 ml-2">{testimonial.content}</p>
-                </div>
-                
-                <div className="text-sm text-gray-400">{testimonial.date}</div>
               </div>
-              
-              {/* Pie de tarjeta estilo Google */}
-              <div className="bg-gray-50 px-6 py-3 border-t border-gray-100">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="#34A853"/>
-                    <path d="M12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6ZM12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12Z" fill="#34A853"/>
-                    <path d="M12 16C9.33 16 4 17.34 4 20V21C4 21.55 4.45 22 5 22H19C19.55 22 20 21.55 20 21V20C20 17.34 14.67 16 12 16Z" fill="#34A853"/>
-                  </svg>
-                  <span className="text-sm text-gray-600">Publicado en Google</span>
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <style jsx global>{`
+            @keyframes opiniones-marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+          `}</style>
         </div>
 
         {/* CTA con nuevo diseño */}
@@ -139,7 +177,7 @@ const Opiniones: React.FC = () => {
   </div>
 
   <p className="mt-4 text-gray-500 text-sm">
-    Más de 500 clientes en Vigo confían en nuestros <strong>fontaneros 24 horas</strong> y <strong>reparación de bajantes</strong>
+    Más de 300 clientes avalan nuestra transparencia, experiencia de más de 15 años y un 97% de satisfacción.
   </p>
 </div>
       </div>

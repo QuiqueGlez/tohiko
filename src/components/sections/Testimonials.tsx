@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
             Confianza garantizada
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Fontaneros en Vigo <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">24 horas</span>
+            ¿Por qué estamos entre las mejores empresas de reformas?
           </h2>
           <div className="flex justify-center mb-6">
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-200 rounded-full"></div>
@@ -27,72 +27,62 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Grid de beneficios */}
-        <div className="grid grid-cols-1 md:grid-cols-2  2xl:grid-cols-5 gap-6">
-          {/* Beneficio 1 - Profesionales */}
+          <div className="grid grid-cols-1 md:grid-cols-2  2xl:grid-cols-5 gap-6">
+            {/* Equipo propio */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2 p-8 text-center">
             <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-white mx-auto">
               <FaCheckCircle className="text-2xl" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Fontaneros Vigo certificados</h3>
-            <p className="text-gray-600 mb-6">
-              Nuestros <strong>fontaneros en Vigo</strong> están cualificados y especializados en <strong>reparación de bajantes</strong> y emergencias.
-            </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Equipo propio especializado</h3>
+              <p className="text-gray-600 mb-6">Albañiles, fontaneros, electricistas y aparejadores propios.</p>
             <a href="#contacto" className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
-              Ver certificaciones <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+              Pide presupuesto <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
-          {/* Beneficio 2 - Urgencias */}
+            {/* Materiales premium */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2 p-8 text-center">
             <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-white mx-auto">
               <FaClock className="text-2xl" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Fontanero 24 horas Vigo</h3>
-            <p className="text-gray-600 mb-6">
-              Servicio de <strong>fontaneros Vigo 24 horas</strong> para emergencias, con respuesta inmediata <strong>a domicilio</strong>.
-            </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Materiales premium al precio de mayorista</h3>
+              <p className="text-gray-600 mb-6">Acabados de alta calidad optimizando costes y logística.</p>
             <a href="tel:+34666666666" className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
               Llamar ahora <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
-          {/* Beneficio 3 - Tarifas */}
+            {/* Garantía */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2 p-8 text-center">
             <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-white mx-auto">
               <FaEuroSign className="text-2xl" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Fontanería Vigo transparente</h3>
-            <p className="text-gray-600 mb-6">
-              Las mejores tarifas de <strong>fontaneros en Vigo</strong> sin costes ocultos. Presupuestos claros.
-            </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Seguro RC y garantía 10 años</h3>
+              <p className="text-gray-600 mb-6">Tranquilidad total con cobertura y garantías por escrito.</p>
             <a href="#tarifas" className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
-              Ver tarifas <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+              Ver condiciones <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
-          {/* Beneficio 4 - Presupuestos */}
+            {/* Licencias y subvenciones */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2 p-8 text-center">
             <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-white mx-auto">
               <FaFileAlt className="text-2xl" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Fontaneros a domicilio</h3>
-            <p className="text-gray-600 mb-6">
-              Nuestros <strong>fontaneros Vigo</strong> evalúan tu caso sin coste y ofrecen solución inmediata.
-            </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Gestión integral de licencias y subvenciones</h3>
+              <p className="text-gray-600 mb-6">Tramitación completa y asesoría técnica.</p>
             <a href="#contacto" className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
               Pedir presupuesto <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
-          {/* Beneficio 5 - Clientes */}
+            {/* Lean Construction y residuos */}
           <div className="group bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2 p-8 text-center">
             <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-white mx-auto">
               <FaUsers className="text-2xl" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Referencia en fontanería Vigo</h3>
-            <p className="text-gray-600 mb-6">
-              Miles de vecinos de Vigo confían en nuestros <strong>fontaneros 24 horas</strong> para sus emergencias.
-            </p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Protocolo Lean y control de residuos</h3>
+              <p className="text-gray-600 mb-6">Obra eficiente y sostenible: tu obra y el planeta importan.</p>
             <a href="#opiniones" className="inline-flex items-center text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
               Ver opiniones <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
             </a>
@@ -106,7 +96,7 @@ const Testimonials: React.FC = () => {
               href="#contacto" 
               className="flex items-center justify-center bg-white hover:bg-gray-50 text-blue-600 font-bold py-5 px-8 rounded-[14px] text-lg transition-all duration-300 group"
             >
-              <span className="mr-3">Contacte con nuestros fontaneros en Vigo</span>
+              <span className="mr-3">Pide hoy tu presupuesto y comprueba la diferencia</span>
               <span className="bg-blue-600 text-white p-2 rounded-full group-hover:bg-blue-700 transition-colors">
                 <FaArrowRight className="text-sm" />
               </span>

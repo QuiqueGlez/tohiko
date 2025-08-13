@@ -54,12 +54,12 @@ class Contact extends React.Component {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="relative inline-block">
                 <span className="hidden lg:absolute inset-x-0 bottom-2 h-3 bg-blue-200/50 z-0"></span>
-                <span className="relative z-10">Contacta con Nuestros</span>
+                <span className="relative z-10">Pide hoy tu presupuesto</span>
               </span>
-              <br /><span className="text-blue-600">Fontaneros en Vigo 24 Horas</span>
+              <br /><span className="text-blue-600">y comprueba nuestra diferencia</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Completa el formulario y te llamaremos inmediatamente para resolver tu problema de fontanería en Vigo
+              Completa el formulario (2 min). Recibe la visita de nuestro técnico en 48 h y un presupuesto cerrado en tu bandeja antes de que otras empresas respondan.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ class Contact extends React.Component {
             {/* Columna izquierda - Información */}
             <div className="lg:w-1/2">
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 h-full">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">¿Por qué elegir a los mejores fontaneros de Vigo?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">¿Por qué elegirnos para tu reforma en Granada?</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -77,7 +77,7 @@ class Contact extends React.Component {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Respuesta inmediata 24/7</h4>
-                      <p className="text-gray-600">Servicio de <strong>fontanero urgente en Vigo</strong> con respuesta en menos de 45 minutos para emergencias.</p>
+                      <p className="text-gray-600">Responsable único disponible 24/7 con seguimiento y atención inmediata.</p>
                     </div>
                   </div>
 
@@ -87,7 +87,7 @@ class Contact extends React.Component {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Garantía de servicio</h4>
-                      <p className="text-gray-600">Todos nuestros trabajos de <strong>fontanería en Vigo</strong> incluyen 2 años de garantía por escrito.</p>
+                      <p className="text-gray-600">Todos nuestros trabajos incluyen garantías por escrito.</p>
                     </div>
                   </div>
 
@@ -97,7 +97,7 @@ class Contact extends React.Component {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Precios transparentes</h4>
-                      <p className="text-gray-600">Presupuesto sin compromiso para reparaciones, instalaciones y <strong>desatascos en Vigo</strong>.</p>
+                      <p className="text-gray-600">Presupuesto cerrado y transparente sin sorpresas.</p>
                     </div>
                   </div>
 
@@ -107,13 +107,13 @@ class Contact extends React.Component {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-800 mb-1">Técnicos certificados</h4>
-                      <p className="text-gray-600">Fontaneros profesionales con más de 10 años de experiencia en <strong>fontanería a domicilio en Vigo</strong>.</p>
+                      <p className="text-gray-600">Profesionales con más de 10 años de experiencia en reformas integrales y parciales.</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-10 pt-6 border-t border-gray-200">
-                  <h4 className="font-bold text-gray-800 mb-3">Zonas de actuación en Vigo:</h4>
+                   <h4 className="font-bold text-gray-800 mb-3">Zonas de actuación en Granada:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     <span className="flex items-center text-gray-600">
                       <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

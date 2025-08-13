@@ -5,39 +5,21 @@ const FAQ: React.FC = () => {
   const faqs = [
     {
       id: 1,
-      question: '¿Cuánto cobra un fontanero en Vigo por hora?',
-      answer: 'Nuestros fontaneros en Vigo trabajan con tarifas transparentes. La visita de diagnóstico cuesta 25€ (descontables si contratas el servicio). Para trabajos estándar como reparar fugas o cambiar grifería, nuestros precios oscilan entre 40-60€/hora. Siempre damos presupuesto cerrado para trabajos complejos como reformas de baños o reparación de bajantes.',
+      question: '¿Cuánto cuesta una reforma integral de vivienda?',
+      answer: 'Depende de superficie, calidades y licencias, pero oscila entre 450 €/m² y 700 €/m². Pide tu presupuesto sin ningún tipo de compromiso y lo sabrás con exactitud.',
       icon: <FaTools className="text-blue-500 text-xl" />
     },
     {
       id: 2,
-      question: '¿Atendéis emergencias de fontanería 24 horas en Vigo?',
-      answer: 'Sí, somos fontaneros urgentes en Vigo disponibles 24/7. Atendemos cualquier problema de fontanería: fugas de agua, roturas de tuberías, averías en calentadores o bajantes obstruidas. Nuestro tiempo medio de respuesta es de menos de 45 minutos en el área de Vigo y alrededores.',
+      question: '¿Trabajáis en la provincia o solo en la capital?',
+      answer: 'Cubrimos ciudad y provincia: Armilla, Albolote, Santa Fe, La Zubia, Motril y más.',
       icon: <FaClock className="text-blue-500 text-xl" />
     },
     {
       id: 3,
-      question: '¿Hacéis trabajos de fontanería los fines de semana en Vigo?',
-      answer: 'Por supuesto. Como fontaneros en Vigo con servicio 24 horas, trabajamos todos los días del año, incluidos festivos y fines de semana. Para urgencias, atendemos inmediatamente. Si es un trabajo programado (como instalar un baño nuevo), recomendamos reservar con antelación para garantizar disponibilidad.',
+      question: '¿Gestionáis licencias y permisos?',
+      answer: 'Sí. Incluimos gestión integral de licencias municipales y autonómicas.',
       icon: <FaCalendarAlt className="text-blue-500 text-xl" />
-    },
-    {
-      id: 4,
-      question: '¿Reparáis calentadores y termos eléctricos en Vigo?',
-      answer: 'Somos especialistas en reparación y mantenimiento de calentadores de gas y termos eléctricos en Vigo. Trabajamos con todas las marcas (Junkers, Bosch, Cointra) y solucionamos problemas de presión, falta de agua caliente o fallos de encendido. También realizamos instalaciones nuevas con certificación oficial.',
-      icon: <FaFire className="text-blue-500 text-xl" />
-    },
-    {
-      id: 5,
-      question: '¿Solucionáis problemas de bajantes y desatascos en Vigo?',
-      answer: 'Sí, ofrecemos servicio completo de desatascos y reparación de bajantes en Vigo. Utilizamos cámaras de inspección para localizar obstrucciones y técnicas no invasivas para limpieza de tuberías. Trabajamos en comunidades de vecinos y viviendas particulares con garantía por escrito.',
-      icon: <FaWater className="text-blue-500 text-xl" />
-    },
-    {
-      id: 6,
-      question: '¿Hacéis instalaciones de fontanería en obras nuevas?',
-      answer: 'Realizamos proyectos completos de fontanería en Vigo para reformas y obras nuevas. Instalamos redes de tuberías, sistemas de calefacción, baños completos y cocinas, siempre cumpliendo con la normativa actual. Trabajamos coordinadamente con albañiles y electricistas para proyectos integrales.',
-      icon: <FaHome className="text-blue-500 text-xl" />
     }
   ];
 
@@ -53,12 +35,12 @@ const FAQ: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Encabezado */}
         <div className="text-center mb-10 lg:mb-16 max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             <span className="relative inline-block">
               <span className="hidden lg:absolute inset-x-0 bottom-2 h-3 bg-blue-200/50 z-0"></span>
               <span className="relative z-10">Preguntas Frecuentes</span>
             </span>
-            <br />de Nuestros <span className="text-blue-600">Clientes en Vigo</span>
+            <br />sobre <span className="text-blue-600">reformas en Granada</span>
           </h2>
           <p className="text-lg text-gray-600">
             Resolvemos tus dudas sobre servicios de fontanería, reparación de bajantes y emergencias 24 horas en Vigo

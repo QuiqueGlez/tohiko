@@ -25,11 +25,11 @@ export const Footer = () => {
           {/* Información con logo */}
           <div>
             <h3 className="text-3xl font-bold mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">Fontaneros</span>
-              <span className="text-white">Vigo</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">Reformas</span>
+              <span className="text-white">Granada Pro</span>
             </h3>
             <p className="mb-6 text-blue-200 leading-relaxed">
-              Servicio profesional de <strong>fontanería en Vigo</strong> y alrededores. <strong>Fontaneros urgentes</strong> con respuesta en menos de 45 minutos. Más de 15 años resolviendo <strong>reparaciones de bajantes</strong> y emergcias.
+              Empresa de <strong>reformas integrales en Granada</strong> con equipo propio. Presupuesto cerrado, cronograma y garantía. Más de 15 años entregando obras impecables.
             </p>
             <div className="flex space-x-5">
               <a
@@ -57,16 +57,16 @@ export const Footer = () => {
               <div className="bg-blue-500 p-2 rounded-lg">
                 <FaTools className="text-white" />
               </div>
-              <span>Servicios de fontanería</span>
+              <span>Servicios de reformas</span>
             </h4>
             <ul className="space-y-4">
               {[
-                "Desatascos urgentes 24h",
-                "Reparación de fugas y bajantes",
-                "Fontaneros a domicilio en Vigo",
-                "Emergencias de fontanería",
-                "Mantenimiento de comunidades",
-                "Instalación de calentadores"
+                 "Reformas integrales",
+                 "Reformas de cocina y baño",
+                 "Rehabilitación de viviendas",
+                 "Licencias de apertura",
+                 "Ventanas PVC y aluminio",
+                 "Hormigón impreso"
               ].map((service, i) => (
                 <li key={i}>
                   <Link
@@ -89,18 +89,18 @@ export const Footer = () => {
               <div className="bg-blue-500 p-2 rounded-lg">
                 <FaMapMarkerAlt className="text-white" />
               </div>
-              <span>Fontaneros en Vigo</span>
+              <span>Reformas en Granada</span>
             </h4>
             <ul className="space-y-4">
               {[
-                "Fontaneros Vigo Centro",
-                "Fontaneros Coia",
-                "Fontaneros Teis",
-                "Fontaneros Bouzas",
-                "Fontaneros Navia",
-                "Fontaneros Alcabre",
-                "Fontaneros Redondela",
-                "Fontaneros Nigrán"
+                 "Granada Centro",
+                 "Zaidín",
+                 "Realejo",
+                 "Albaicín",
+                 "La Zubia",
+                 "Armilla",
+                 "Albolote",
+                 "Santa Fe"
               ].map((zone, i) => (
                 <li key={i} className="flex items-start text-blue-200 hover:text-white transition-colors group">
                   <span className="bg-white/10 group-hover:bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center mt-0.5 mr-3 transition-colors">
@@ -118,7 +118,7 @@ export const Footer = () => {
               <div className="bg-blue-500 p-2 rounded-lg">
                 <FaRegCalendarAlt  className="text-white" />
               </div>
-              <span>Fontanero urgente</span>
+              <span>Atención inmediata</span>
             </h4>
             <ul className="space-y-6">
               <li>
@@ -131,7 +131,7 @@ export const Footer = () => {
                   </span>
                   {SITE_CONFIG.contact.phone}
                 </a>
-                <p className="text-blue-200 text-sm mt-2 pl-16">Fontanero 24 horas en Vigo</p>
+                  <p className="text-blue-200 text-sm mt-2 pl-16">Reformas rápidas y coordinadas</p>
               </li>
 
               <li>
