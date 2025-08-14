@@ -6,23 +6,27 @@ type Project = {
   title: string
   summary: string
   details: string[]
+  image: string
 }
 
 const projects: Project[] = [
   {
     title: 'Ático en el Albaicín convertido en loft',
     summary: 'Optimización de espacio y luz natural con soluciones a medida.',
-    details: ['Memoria técnica', 'Selección de materiales', 'Métricas de ahorro energético']
+    details: ['Memoria técnica', 'Selección de materiales', 'Métricas de ahorro energético'],
+    image: '/Images/Fotosreformas/reformas en salon.webp'
   },
   {
     title: 'Rehabilitación de edificio catalogado',
     summary: 'Refuerzo estructural y restauración respetando normativa histórica.',
-    details: ['Cálculo estructural', 'Restauración de envolvente', 'Gestión de licencias']
+    details: ['Cálculo estructural', 'Restauración de envolvente', 'Gestión de licencias'],
+    image: '/Images/Fotosreformas/reforma fachada granada.webp'
   },
   {
     title: 'Instalación de ventanas PVC en vivienda',
     summary: 'Mejora de eficiencia energética y confort acústico.',
-    details: ['Triple junta', 'Vidrio bajo emisivo', 'Ahorro estimado 40%']
+    details: ['Triple junta', 'Vidrio bajo emisivo', 'Ahorro estimado 40%'],
+    image: '/Images/Fotosreformas/reformas granada pro.webp'
   }
 ]
 
@@ -42,8 +46,12 @@ const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {projects.map((p, idx) => (
             <article key={idx} className="bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-lg transition-shadow p-6">
-              <div className="h-40 w-full bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl mb-4 flex items-center justify-center text-blue-600 font-semibold">
-                Foto del proyecto
+              <div className="h-40 w-full rounded-xl mb-4 overflow-hidden">
+                <img 
+                  src={p.image} 
+                  alt={p.title} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">{p.title}</h3>
               <p className="text-gray-600 mb-4">{p.summary}</p>

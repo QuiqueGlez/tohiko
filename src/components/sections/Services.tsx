@@ -49,7 +49,7 @@ const Services: React.FC = () => {
               </ul>
               <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
               <p className="text-gray-600 mb-6">Vivienda o local listo para amueblar</p>
-              <a href="#contacto" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Solicitar servicio <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+              <a href="/servicios/reformas-integrales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
             </div>
           </div>
 
@@ -74,7 +74,7 @@ const Services: React.FC = () => {
               </ul>
               <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
               <p className="text-gray-600 mb-6">Estancias listas para disfrutar</p>
-              <a href="#contacto" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Solicitar servicio <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+              <a href="/servicios/reformas-parciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ const Services: React.FC = () => {
           <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
             <div className="relative">
               <img 
-                src="/Images/Fotosreformas/reformas cocinas en granada.webp" 
+                src="/Images/Fotosreformas/reformas locales comerciales.webp" 
                 alt="Reforma de local comercial en Granada" 
                 className="w-full h-48 object-cover"
               />
@@ -99,7 +99,7 @@ const Services: React.FC = () => {
               </ul>
               <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
               <p className="text-gray-600 mb-6">Local listo para facturar</p>
-              <a href="#contacto" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Solicitar servicio <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+              <a href="/servicios/reformas-locales-comerciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
             </div>
           </div>
 
@@ -124,7 +124,7 @@ const Services: React.FC = () => {
               </ul>
               <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
               <p className="text-gray-600 mb-6">Comunidad segura y eficiente</p>
-              <a href="#contacto" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Solicitar servicio <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+              <a href="/servicios/reformas-comunidades" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
             </div>
           </div>
 
@@ -149,19 +149,39 @@ const Services: React.FC = () => {
               </ul>
               <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
               <p className="text-gray-600 mb-6">Piscina lista para la temporada</p>
-              <a href="#contacto" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Solicitar servicio <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+              <a href="/servicios/reformas-piscinas" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+            </div>
+          </div>
+
+          {/* Trabajos complementarios */}
+          <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="relative">
+              <img 
+                src="/Images/Fotosreformas/reformas interiores granada.webp" 
+                alt="Trabajos complementarios en Granada - Electricidad, fontanería, ventanas, herrería" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                <h3 className="text-2xl font-bold text-white">Trabajos complementarios</h3>
+              </div>
+            </div>
+            <div className="p-6">
+              <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Electricidad</li>
+                <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Fontanería</li>
+                <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Ventanas PVC y aluminio</li>
+                <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Herrería, pladur y pintura</li>
+              </ul>
+              <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+              <p className="text-gray-600 mb-6">En reformas integrales va incluido</p>
+              <a href="/servicios/trabajos-complementarios" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
             </div>
           </div>
           
         </div>
 
-        {/* Trabajos complementarios */}
-        <div className="mt-10 lg:mt-16 max-w-5xl mx-auto">
-          <div className="bg-white border border-blue-100 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-gray-900 mb-3">Trabajos complementarios</h3>
-            <p className="text-gray-600">También realizamos <strong>electricidad</strong>, <strong>fontanería</strong>, <strong>ventanas de PVC y aluminio</strong>, <strong>herrería</strong>, <strong>pladur y yeso</strong> y <strong>pintura</strong>. En las <strong>reformas integrales</strong> estos oficios van incluidos por defecto.</p>
-          </div>
-        </div>
+
 
         {/* CTA premium */}
         <div className="mt-10 lg:mt-20 text-center">

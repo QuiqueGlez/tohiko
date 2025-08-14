@@ -58,6 +58,7 @@ export const Navbar = () => {
                       <Link href="/servicios/reformas-locales-comerciales" className="block px-3 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">Reformas de locales comerciales</Link>
                       <Link href="/servicios/reformas-comunidades" className="block px-3 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">Reformas de comunidades de vecinos</Link>
                       <Link href="/servicios/reformas-piscinas" className="block px-3 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">Reformas de piscinas</Link>
+                      <Link href="/servicios/trabajos-complementarios" className="block px-3 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">Trabajos complementarios</Link>
                     </div>
                   </div>
                 </div>
@@ -193,6 +194,7 @@ export const Navbar = () => {
                   <Link href="/servicios/reformas-locales-comerciales" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-gray-600">Reformas locales comerciales</Link>
                   <Link href="/servicios/reformas-comunidades" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-gray-600">Reformas comunidades</Link>
                   <Link href="/servicios/reformas-piscinas" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-gray-600">Reformas piscinas</Link>
+                  <Link href="/servicios/trabajos-complementarios" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 text-sm text-gray-600">Trabajos complementarios</Link>
                 </div>
               </div>
               

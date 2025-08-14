@@ -21,8 +21,8 @@ const Testimonials: React.FC = () => {
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-200 rounded-full"></div>
           </div>
           <p className="text-xl text-gray-600">
-            Los <strong>fontaneros en Vigo</strong> más cualificados para <strong>reparación de bajantes</strong> y todo tipo de servicios de <strong>fontanería en Vigo</strong>.
-            <br className="hidden md:block" /> Servicio <strong>a domicilio</strong> rápido y con garantía por escrito.
+            Los <strong>profesionales de reformas en Granada</strong> más cualificados para <strong>reformas integrales</strong>, <strong>parciales</strong> y todo tipo de servicios de <strong>construcción en Granada y provincia</strong>.
+            <br className="hidden md:block" /> Servicio <strong>profesional</strong> rápido y con garantía por escrito.
           </p>
         </div>
 

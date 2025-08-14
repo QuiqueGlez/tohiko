@@ -163,7 +163,7 @@ class Contact extends React.Component {
                   <div className="p-10 text-center">
                     <FaCheckCircle className="text-green-500 text-5xl mx-auto mb-6" />
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">¡Mensaje enviado con éxito!</h3>
-                    <p className="text-gray-600 mb-6">Nuestros <strong>fontaneros en Vigo</strong> se pondrán en contacto contigo en menos de 10 minutos.</p>
+                    <p className="text-gray-600 mb-6">Nuestros <strong>profesionales de reformas en Granada</strong> se pondrán en contacto contigo en menos de 10 minutos.</p>
                     <button
                       onClick={() => this.setState({ isSubmitted: false })}
                       className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors"

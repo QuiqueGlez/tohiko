@@ -63,10 +63,10 @@ export const Footer = () => {
               {[
                  "Reformas integrales",
                  "Reformas de cocina y baño",
-                 "Rehabilitación de viviendas",
-                 "Licencias de apertura",
-                 "Ventanas PVC y aluminio",
-                 "Hormigón impreso"
+                 "Reformas de piscinas",
+                 "Reformas de locales comerciales",
+                 "Trabajos complementarios",
+                 "Reformas de comunidades"
               ].map((service, i) => (
                 <li key={i}>
                   <Link

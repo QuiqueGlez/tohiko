@@ -1,9 +1,10 @@
 'use client'
 
 import React from 'react'
-import { FaMapMarkerAlt, FaBuilding, FaHome, FaPhone, FaEnvelope } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaBuilding, FaHome, FaPhone, FaEnvelope, FaArrowRight } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const PeligrosContent: React.FC = () => {
   return (
@@ -36,40 +37,234 @@ const PeligrosContent: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Nuestros servicios en Peligros</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaHome className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Reformas Residenciales</h3>
-                <p className="text-gray-600">Renovación de viviendas en el área metropolitana norte de Granada.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {/* Reformas integrales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas integrales granada.webp" 
+                    alt="Reforma integral en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas integrales</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Demoliciones</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Instalaciones completas</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Diseño 3D</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Vivienda o local listo para amueblar</p>
+                  <a href="/servicios/reformas-integrales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaBuilding className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Reformas de Edificios</h3>
-                <p className="text-gray-600">Modernización de bloques residenciales en Peligros.</p>
+
+              {/* Reformas parciales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas baños en granada.webp" 
+                    alt="Reforma de baño en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas parciales (baños, cocinas, salón)</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Plato de ducha</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Encimeras</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Muebles a medida</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Estancias listas para disfrutar</p>
+                  <a href="/servicios/reformas-parciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaMapMarkerAlt className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Reformas Parciales</h3>
-                <p className="text-gray-600">Baños, cocinas y salones en viviendas de Peligros.</p>
+
+              {/* Reformas de locales comerciales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas locales comerciales.webp" 
+                    alt="Reforma de local comercial en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de locales comerciales</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Proyecto y licencias</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Adecuación de instalaciones</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Imagen y acabados</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Local listo para facturar</p>
+                  <a href="/servicios/reformas-locales-comerciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Reformas de comunidades de vecinos */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas fachadas granada.webp" 
+                    alt="Reforma de comunidades de vecinos en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de comunidades de vecinos</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Mantenimiento y zonas comunes</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Bajantes y fontanería</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Accesibilidad</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Comunidad segura y eficiente</p>
+                  <a href="/servicios/reformas-comunidades" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Reformas de piscinas */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas piscinas granada.webp" 
+                    alt="Reforma de piscinas en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de piscinas</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Impermeabilización certificada</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Gresite o liner</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Depuración e iluminación</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Piscina lista para la temporada</p>
+                  <a href="/servicios/reformas-piscinas" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Trabajos complementarios */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas interiores granada.webp" 
+                    alt="Trabajos complementarios en Peligros" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Trabajos complementarios</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Electricidad</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Fontanería</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Ventanas PVC y aluminio</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Herrería, pladur y pintura</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">En reformas integrales va incluido</p>
+                  <a href="/servicios/trabajos-complementarios" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Zonas específicas */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+              Trabajamos en todas las zonas de Peligros
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4">Peligros Centro</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Casco urbano</li>
+                  <li>• Plaza del Ayuntamiento</li>
+                  <li>• Zona comercial</li>
+                  <li>• Barrios tradicionales</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-bold mb-4">Zona Norte y Desarrollos</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Nuevas urbanizaciones</li>
+                  <li>• Zona de expansión</li>
+                  <li>• Área metropolitana norte</li>
+                  <li>• Acceso a Granada capital</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ventajas de trabajar en Peligros */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+              ¿Por qué somos especialistas en Peligros?
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="text-center">
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FaHome className="text-2xl text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4">Zona residencial familiar</h3>
+                <p className="text-gray-600">Conocemos las necesidades de las familias en esta tranquila zona residencial de Granada.</p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FaMapMarkerAlt className="text-2xl text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4">Cercanía y tranquilidad</h3>
+                <p className="text-gray-600">Ubicación ideal que combina la proximidad a Granada con un ambiente residencial tranquilo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       <section id="presupuesto" className="py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Tienes un proyecto en Peligros?</h2>
             <p className="text-xl mb-8 text-blue-100">Solicita tu presupuesto sin compromiso</p>
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <input type="text" placeholder="Tu nombre" required className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-gray-900" />
-                <input type="tel" placeholder="600 123 456" required className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-gray-900" />
-                <textarea placeholder="Describe tu proyecto en Peligros..." rows={3} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-gray-900" />
-                <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors">Solicitar presupuesto gratuito</button>
-              </form>
-            </div>
+            <StandardContactForm 
+              location="Peligros" 
+              placeholder="Describe tu proyecto en Peligros..." 
+            />
           </div>
         </div>
       </section>

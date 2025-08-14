@@ -19,8 +19,12 @@ const ShowerSwap: React.FC = () => {
             <li className="flex items-start"><span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></span>Entrega con limpieza final</li>
           </ul>
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6">
-            <div className="h-48 w-full bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl mb-4 flex items-center justify-center text-blue-600 font-semibold">
-              Foto antes/después
+            <div className="h-48 w-full rounded-xl mb-4 overflow-hidden">
+              <img 
+                src="/Images/Fotosreformas/reforma baño granada.webp" 
+                alt="Cambiar bañera por plato de ducha en Granada" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <a href="#contacto" className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors">Solicitar presupuesto</a>
           </div>

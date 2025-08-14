@@ -43,7 +43,7 @@ const FAQ: React.FC = () => {
             <br />sobre <span className="text-blue-600">reformas en Granada</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Resolvemos tus dudas sobre servicios de fontanería, reparación de bajantes y emergencias 24 horas en Vigo
+            Resolvemos tus dudas sobre servicios de reformas integrales, parciales y construcción en Granada y provincia
           </p>
         </div>
 
@@ -88,7 +88,7 @@ const FAQ: React.FC = () => {
       href="#contacto" 
       className="w-full sm:w-auto flex-shrink-0 flex items-center justify-center bg-white hover:bg-gray-50 text-blue-600 font-bold py-4 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-blue-100"
     >
-      <span className="mr-3">¿Necesitas un fontanero en Vigo?</span>
+      <span className="mr-3">¿Necesitas una reforma en Granada?</span>
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd"></path>
       </svg>
@@ -107,7 +107,7 @@ const FAQ: React.FC = () => {
   </div>
 
   <p className="mt-4 text-gray-500 text-sm">
-    <strong>Fontaneros profesionales en Vigo</strong> disponibles las 24 horas para urgencias y trabajos programados
+    <strong>Profesionales de reformas en Granada</strong> disponibles para presupuestos y trabajos programados
   </p>
 </div>
       </div>

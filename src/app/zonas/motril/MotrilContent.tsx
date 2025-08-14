@@ -1,9 +1,10 @@
 'use client'
 
 import React from 'react'
-import { FaMapMarkerAlt, FaUmbrellaBeach, FaBuilding, FaPhone, FaEnvelope, FaHome } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaUmbrellaBeach, FaBuilding, FaPhone, FaEnvelope, FaHome, FaArrowRight } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const MotrilContent: React.FC = () => {
   return (
@@ -47,29 +48,156 @@ const MotrilContent: React.FC = () => {
               Nuestros servicios en Motril
             </h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaUmbrellaBeach className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Reformas de Apartamentos Turísticos</h3>
-                <p className="text-gray-600">
-                  Espacios optimizados para el alquiler vacacional con diseño funcional y atractivo.
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {/* Reformas integrales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas integrales granada.webp" 
+                    alt="Reforma integral en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas integrales</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Demoliciones</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Instalaciones completas</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Diseño 3D</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Vivienda o local listo para amueblar</p>
+                  <a href="/servicios/reformas-integrales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaHome className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Viviendas Vacacionales</h3>
-                <p className="text-gray-600">
-                  Reformas adaptadas al clima costero con materiales resistentes a la humedad marina.
-                </p>
+
+              {/* Reformas parciales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas baños en granada.webp" 
+                    alt="Reforma de baño en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas parciales (baños, cocinas, salón)</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Plato de ducha</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Encimeras</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Muebles a medida</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Estancias listas para disfrutar</p>
+                  <a href="/servicios/reformas-parciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <FaBuilding className="text-3xl text-blue-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4">Tratamientos Anti-humedad</h3>
-                <p className="text-gray-600">
-                  Soluciones especializadas para combatir la humedad marina típica de la costa.
-                </p>
+
+              {/* Reformas de locales comerciales */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas locales comerciales.webp" 
+                    alt="Reforma de local comercial en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de locales comerciales</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Proyecto y licencias</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Adecuación de instalaciones</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Imagen y acabados</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Local listo para facturar</p>
+                  <a href="/servicios/reformas-locales-comerciales" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Reformas de comunidades de vecinos */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas fachadas granada.webp" 
+                    alt="Reforma de comunidades de vecinos en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de comunidades de vecinos</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Mantenimiento y zonas comunes</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Bajantes y fontanería</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Accesibilidad</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Comunidad segura y eficiente</p>
+                  <a href="/servicios/reformas-comunidades" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Reformas de piscinas */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas piscinas granada.webp" 
+                    alt="Reforma de piscinas en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Reformas de piscinas</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Impermeabilización certificada</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Gresite o liner</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Depuración e iluminación</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">Piscina lista para la temporada</p>
+                  <a href="/servicios/reformas-piscinas" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
+              </div>
+
+              {/* Trabajos complementarios */}
+              <div className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:border-blue-100 transition-all duration-300 hover:-translate-y-2">
+                <div className="relative">
+                  <img 
+                    src="/Images/Fotosreformas/reformas interiores granada.webp" 
+                    alt="Trabajos complementarios en Motril" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-4">
+                    <h3 className="text-2xl font-bold text-white">Trabajos complementarios</h3>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-blue-600 font-semibold mb-3">Qué incluye</div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Electricidad</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Fontanería</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Ventanas PVC y aluminio</li>
+                    <li className="flex items-center text-gray-600"><span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>Herrería, pladur y pintura</li>
+                  </ul>
+                  <div className="text-sm text-blue-600 font-semibold mb-1">Resultado</div>
+                  <p className="text-gray-600 mb-6">En reformas integrales va incluido</p>
+                  <a href="/servicios/trabajos-complementarios" className="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">Ver más detalles <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" /></a>
+                </div>
               </div>
             </div>
           </div>
@@ -149,77 +277,10 @@ const MotrilContent: React.FC = () => {
               Solicita tu presupuesto especializado sin compromiso
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="zona" className="block text-sm font-medium text-gray-700 mb-1">Zona específica</label>
-                  <input
-                    type="text"
-                    id="zona"
-                    name="zona"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Ej: Playa Granada, Centro..."
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="tipoPropiedad" className="block text-sm font-medium text-gray-700 mb-1">Tipo de propiedad</label>
-                  <select
-                    id="tipoPropiedad"
-                    name="tipoPropiedad"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                  >
-                    <option value="">Selecciona el tipo</option>
-                    <option value="apartamento-turistico">Apartamento turístico</option>
-                    <option value="vivienda-vacacional">Vivienda vacacional</option>
-                    <option value="primera-residencia">Primera residencia</option>
-                    <option value="local-comercial">Local comercial</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos tu proyecto</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe tu proyecto en Motril..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar presupuesto gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm 
+              location="Motril" 
+              placeholder="Describe tu proyecto en Motril..." 
+            />
           </div>
         </div>
       </section>
