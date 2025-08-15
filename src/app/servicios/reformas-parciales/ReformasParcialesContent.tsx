@@ -4,6 +4,7 @@ import React from 'react'
 import { FaBath, FaUtensils, FaCouch, FaCheckCircle, FaPhone, FaEnvelope } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const ReformasParcialesContent: React.FC = () => {
   return (
@@ -102,17 +103,17 @@ const ReformasParcialesContent: React.FC = () => {
               Ejemplos de Reformas Parciales
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
                   src="/Images/Fotosreformas/expecialistas cocina granada.webp" 
                   alt="Especialistas en cocinas Granada" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Cocina Moderna</h3>
-                    <p className="text-sm">Diseño funcional</p>
+                    <h3 className="font-bold text-lg">Cocina Premium</h3>
+                    <p className="text-sm">Electrodomésticos integrados</p>
                   </div>
                 </div>
               </div>
@@ -121,12 +122,12 @@ const ReformasParcialesContent: React.FC = () => {
                 <img 
                   src="/Images/Fotosreformas/reforma cocina granada.webp" 
                   alt="Reforma de cocina en Granada" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Cocina Premium</h3>
-                    <p className="text-sm">Acabados de calidad</p>
+                    <h3 className="font-bold text-lg">Cocina Moderna</h3>
+                    <p className="text-sm">Isla central</p>
                   </div>
                 </div>
               </div>
@@ -135,11 +136,11 @@ const ReformasParcialesContent: React.FC = () => {
                 <img 
                   src="/Images/Fotosreformas/reforma dormitorio granada.webp" 
                   alt="Reforma de dormitorio en Granada" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Dormitorio</h3>
+                    <h3 className="font-bold text-lg">Dormitorio</h3>
                     <p className="text-sm">Espacio optimizado</p>
                   </div>
                 </div>
@@ -149,12 +150,40 @@ const ReformasParcialesContent: React.FC = () => {
                 <img 
                   src="/Images/Fotosreformas/reformas salon granada.webp" 
                   alt="Reforma de salón en Granada" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Salón Moderno</h3>
+                    <h3 className="font-bold text-lg">Salón Moderno</h3>
                     <p className="text-sm">Ambiente acogedor</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/Images/Fotosreformas/salon reformado granada.webp" 
+                  alt="Salón reformado en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Salón Reformado</h3>
+                    <p className="text-sm">Espacio renovado</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/Images/Fotosreformas/baño reformado granada.webp" 
+                  alt="Baño reformado en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Baño Reformado</h3>
+                    <p className="text-sm">Máximo confort</p>
                   </div>
                 </div>
               </div>
@@ -219,66 +248,10 @@ const ReformasParcialesContent: React.FC = () => {
               Solicita tu presupuesto personalizado sin compromiso
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="estancia" className="block text-sm font-medium text-gray-700 mb-1">¿Qué quieres reformar?</label>
-                  <select
-                    id="estancia"
-                    name="estancia"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                  >
-                    <option value="">Selecciona una estancia</option>
-                    <option value="baño">Baño</option>
-                    <option value="cocina">Cocina</option>
-                    <option value="salon">Salón</option>
-                    <option value="varios">Varias estancias</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos tu proyecto</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={3}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe qué te gustaría cambiar..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar presupuesto gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm
+              location="Reformas Parciales"
+              placeholder="Describe qué estancias quieres renovar (baño, cocina, salón...)..."
+            />
           </div>
         </div>
       </section>

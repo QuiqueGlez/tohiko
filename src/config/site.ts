@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
     description: "Reformas integrales en Granada con equipo propio, presupuesto cerrado y gestión integral de licencias. Transparencia, cronograma y garantía.",
     contact: {
       phone: "+34 627 05 03 12",
-      email: "info@fontanerosvigo.com",
+      email: "info@reformasgranada.com",
       city: "Granada",
     },
     socialLinks: {

@@ -4,6 +4,7 @@ import React from 'react'
 import { FaSwimmingPool, FaShieldAlt, FaPalette, FaCheckCircle, FaPhone, FaEnvelope, FaLightbulb } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const ReformasPiscinasContent: React.FC = () => {
   return (
@@ -54,7 +55,7 @@ const ReformasPiscinasContent: React.FC = () => {
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center"><FaCheckCircle className="text-green-500 mr-2 flex-shrink-0" /> Preparación del soporte</li>
                   <li className="flex items-center"><FaCheckCircle className="text-green-500 mr-2 flex-shrink-0" /> Aplicación profesional</li>
-                  <li className="flex items-center"><FaCheckCircle className="text-green-500 mr-2 flex-shrink-0" /> Garantía 10 años</li>
+                  <li className="flex items-center"><FaCheckCircle className="text-green-500 mr-2 flex-shrink-0" /> Garantía 2 años</li>
                 </ul>
               </div>
               
@@ -143,19 +144,7 @@ const ReformasPiscinasContent: React.FC = () => {
                 </div>
               </div>
 
-              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                <img 
-                  src="/Images/Fotosreformas/reformas piscinas granada.webp" 
-                  alt="Reforma de piscinas comunitarias en Granada" 
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Piscina Comunitaria</h3>
-                    <p className="text-sm">Acabados profesionales</p>
-                  </div>
-                </div>
-              </div>
+
 
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
@@ -181,6 +170,20 @@ const ReformasPiscinasContent: React.FC = () => {
                   <div className="absolute bottom-4 left-4 text-white">
                     <h3 className="font-bold text-lg">Gresite Premium</h3>
                     <p className="text-sm">Múltiples acabados</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/Images/Fotosreformas/reforma piscinas en motril.webp" 
+                  alt="Reforma de piscinas en Motril" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Piscinas Motril</h3>
+                    <p className="text-sm">Costa de Granada</p>
                   </div>
                 </div>
               </div>
@@ -253,66 +256,10 @@ const ReformasPiscinasContent: React.FC = () => {
               Solicita tu presupuesto sin compromiso y disfruta de una piscina como nueva
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="tipoReforma" className="block text-sm font-medium text-gray-700 mb-1">Tipo de reforma</label>
-                  <select
-                    id="tipoReforma"
-                    name="tipoReforma"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                  >
-                    <option value="">Selecciona el tipo</option>
-                    <option value="impermeabilizacion">Solo impermeabilización</option>
-                    <option value="revestimiento">Cambio de revestimiento</option>
-                    <option value="completa">Reforma completa</option>
-                    <option value="mantenimiento">Mantenimiento general</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos sobre tu piscina</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe el estado y necesidades de tu piscina..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar presupuesto gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm
+              location="Reformas de Piscinas"
+              placeholder="Describe el estado y necesidades de tu piscina (impermeabilización, revestimiento, reforma completa...)..."
+            />
           </div>
         </div>
       </section>

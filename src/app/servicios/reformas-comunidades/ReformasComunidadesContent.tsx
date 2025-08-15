@@ -4,6 +4,7 @@ import React from 'react'
 import { FaBuilding, FaUsers, FaWrench, FaCheckCircle, FaPhone, FaEnvelope, FaHandsHelping } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const ReformasComunidadesContent: React.FC = () => {
   return (
@@ -103,42 +104,42 @@ const ReformasComunidadesContent: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
+                  src="/Images/Fotosreformas/reforma fachada granada.webp" 
+                  alt="Reforma de fachada de comunidad en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Fachada Principal</h3>
+                    <p className="text-sm">Renovación exterior</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
                   src="/Images/Fotosreformas/reformas fachadas granada.webp" 
-                  alt="Reforma de fachadas en comunidades de Granada" 
+                  alt="Reformas de fachadas de comunidades en Granada" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Fachadas</h3>
-                    <p className="text-sm">Rehabilitación completa</p>
+                    <h3 className="font-bold text-lg">Fachadas Completas</h3>
+                    <p className="text-sm">Rehabilitación integral</p>
                   </div>
                 </div>
               </div>
 
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/Images/Fotosreformas/reformas en granada centro.webp" 
-                  alt="Reformas de comunidades en Granada centro" 
+                  src="/Images/Fotosreformas/fachada comunidad de vecinos.webp" 
+                  alt="Fachada de comunidad de vecinos reformada en Granada" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Zonas Comunes</h3>
-                    <p className="text-sm">Granada Centro</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                <img 
-                  src="/Images/Fotosreformas/reformas granada.webp" 
-                  alt="Reformas integrales de comunidades en Granada" 
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Reforma Integral</h3>
-                    <p className="text-sm">Comunidad completa</p>
+                    <h3 className="font-bold text-lg">Comunidad de Vecinos</h3>
+                    <p className="text-sm">Fachada renovada</p>
                   </div>
                 </div>
               </div>
@@ -175,8 +176,8 @@ const ReformasComunidadesContent: React.FC = () => {
               <div className="flex items-start">
                 <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Gestión de subvenciones</h3>
-                  <p className="text-gray-600">Te ayudamos a obtener las ayudas disponibles para rehabilitación de edificios.</p>
+                  <h3 className="text-xl font-bold mb-2">3. Asesoramiento en opciones de mejora</h3>
+                  <p className="text-gray-600">Te orientamos sobre las soluciones más eficientes y sostenibles para tu comunidad, ayudando a tomar decisiones informadas.</p>
                 </div>
               </div>
               
@@ -211,66 +212,10 @@ const ReformasComunidadesContent: React.FC = () => {
               Solicita tu estudio técnico sin compromiso y descubre las mejoras posibles
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="cargo" className="block text-sm font-medium text-gray-700 mb-1">Cargo en la comunidad</label>
-                  <select
-                    id="cargo"
-                    name="cargo"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                  >
-                    <option value="">Selecciona tu cargo</option>
-                    <option value="presidente">Presidente</option>
-                    <option value="administrador">Administrador</option>
-                    <option value="vecino">Vecino</option>
-                    <option value="otro">Otro</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">¿Qué necesita la comunidad?</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe las necesidades de reforma de tu comunidad..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar estudio técnico gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm
+              location="Reformas de Comunidades"
+              placeholder="Describe las necesidades de reforma de tu comunidad (fachada, escaleras, azotea, patio...)..."
+            />
           </div>
         </div>
       </section>

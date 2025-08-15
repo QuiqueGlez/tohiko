@@ -4,6 +4,7 @@ import React from 'react'
 import { FaStore, FaClipboardList, FaTools, FaCheckCircle, FaPhone, FaEnvelope, FaCertificate } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const ReformasLocalesComerciales: React.FC = () => {
   return (
@@ -103,42 +104,42 @@ const ReformasLocalesComerciales: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/Images/Fotosreformas/reforma exterior granada.webp" 
-                  alt="Reforma exterior de local comercial en Granada" 
+                  src="/Images/Fotosreformas/reforma local comercial nuevo.webp" 
+                  alt="Reforma de local comercial nuevo en Granada" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Fachada Comercial</h3>
-                    <p className="text-sm">Imagen corporativa</p>
+                    <h3 className="font-bold text-lg">Local Nuevo</h3>
+                    <p className="text-sm">Diseño moderno</p>
                   </div>
                 </div>
               </div>
 
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/Images/Fotosreformas/reforma exteriores.webp" 
-                  alt="Reforma de exteriores para local comercial" 
+                  src="/Images/Fotosreformas/reforma local.webp" 
+                  alt="Reforma de local comercial en Granada" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Accesos</h3>
-                    <p className="text-sm">Diseño funcional</p>
+                    <h3 className="font-bold text-lg">Local Reformado</h3>
+                    <p className="text-sm">Optimización completa</p>
                   </div>
                 </div>
               </div>
 
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/Images/Fotosreformas/diseño 3d 2.webp" 
-                  alt="Diseño 3D para local comercial en Granada" 
+                  src="/Images/Fotosreformas/reformas locales comerciales.webp" 
+                  alt="Reformas de locales comerciales en Granada" 
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold text-lg">Planificación 3D</h3>
-                    <p className="text-sm">Visualización previa</p>
+                    <h3 className="font-bold text-lg">Locales Comerciales</h3>
+                    <p className="text-sm">Especialización sectorial</p>
                   </div>
                 </div>
               </div>
@@ -211,62 +212,10 @@ const ReformasLocalesComerciales: React.FC = () => {
               Solicita tu presupuesto sin compromiso y descubre cómo crear el local perfecto
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="tipoNegocio" className="block text-sm font-medium text-gray-700 mb-1">Tipo de negocio</label>
-                  <input
-                    type="text"
-                    id="tipoNegocio"
-                    name="tipoNegocio"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Ej: Restaurante, tienda, oficina..."
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos tu proyecto</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe tu proyecto de local comercial..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar presupuesto gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm
+              location="Reformas de Locales Comerciales"
+              placeholder="Describe tu proyecto de local comercial (restaurante, tienda, oficina...)..."
+            />
           </div>
         </div>
       </section>

@@ -153,7 +153,7 @@ export const Footer = () => {
                 </span>
                 <div>
                   <p className="text-white font-semibold">Garantía en reparaciones</p>
-                  <p className="text-blue-200 text-sm">Fontaneros certificados en Vigo</p>
+                  <p className="text-blue-200 text-sm">Especialistas certificados en Granada</p>
                 </div>
               </li>
             </ul>

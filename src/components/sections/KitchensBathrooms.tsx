@@ -19,7 +19,7 @@ const KitchensBathrooms: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-gray-600">Proyecto de cocina/baño con acabados premium y optimización del espacio.</p>
+            <p className="text-gray-600">Diseño de cocinas modernas con muebles a medida, electrodomésticos integrados y máximo aprovechamiento del espacio.</p>
           </div>
           <div className="bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-lg transition-shadow p-6">
             <div className="h-40 w-full rounded-xl mb-4 overflow-hidden">
@@ -29,7 +29,7 @@ const KitchensBathrooms: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-gray-600">Proyecto de cocina/baño con acabados premium y optimización del espacio.</p>
+            <p className="text-gray-600">Reforma completa de baños con cambio de bañera por plato de ducha, mamparas de cristal y grifería premium.</p>
           </div>
           <div className="bg-white border border-gray-100 rounded-2xl shadow-md hover:shadow-lg transition-shadow p-6">
             <div className="h-40 w-full rounded-xl mb-4 overflow-hidden">
@@ -39,7 +39,7 @@ const KitchensBathrooms: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-gray-600">Proyecto de cocina/baño con acabados premium y optimización del espacio.</p>
+            <p className="text-gray-600">Reforma integral de cocinas con distribución optimizada, isla central y acabados de alta calidad.</p>
           </div>
         </div>
       </div>

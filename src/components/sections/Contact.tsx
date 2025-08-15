@@ -112,47 +112,7 @@ class Contact extends React.Component {
                   </div>
                 </div>
 
-                <div className="mt-10 pt-6 border-t border-gray-200">
-                   <h4 className="font-bold text-gray-800 mb-3">Zonas de actuación en Granada:</h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Vigo Centro
-                    </span>
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Teis
-                    </span>
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Coia
-                    </span>
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Navia
-                    </span>
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Samil
-                    </span>
-                    <span className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      Alcabre
-                    </span>
-                  </div>
-                </div>
+
               </div>
             </div>
 
@@ -211,7 +171,7 @@ class Contact extends React.Component {
                     <div className="mb-6">
                       <label htmlFor="direccion" className="block text-gray-700 font-medium mb-2">
                         <FaMapMarkerAlt className="inline mr-2 text-blue-500" />
-                        Dirección en Vigo (opcional)
+                        Dirección en Granada (opcional)
                       </label>
                       <input
                         type="text"
@@ -253,14 +213,14 @@ class Contact extends React.Component {
                       ) : (
                         <>
                           <FaPaperPlane className="inline mr-2" />
-                          Solicitar fontanero en Vigo
+                          Solicitar presupuesto en Granada
                         </>
                       )}
                     </button>
 
                     {/* Mensaje de respuesta rápida */}
                     <div className="mt-4 text-center text-gray-500 text-sm">
-                      <p>Nuestros <strong>fontaneros urgentes en Vigo</strong> responderán en menos de 10 minutos</p>
+                      <p>Nuestros <strong>especialistas en reformas Granada</strong> responderán en menos de 10 minutos</p>
                     </div>
                   </form>
                 )}

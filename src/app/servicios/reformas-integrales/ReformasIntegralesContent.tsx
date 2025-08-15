@@ -4,6 +4,7 @@ import React from 'react'
 import { FaHome, FaClipboardList, FaTools, FaCheckCircle, FaPhone, FaEnvelope } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const ReformasIntegralesContent: React.FC = () => {
   return (
@@ -184,6 +185,8 @@ const ReformasIntegralesContent: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -253,51 +256,10 @@ const ReformasIntegralesContent: React.FC = () => {
               Solicita tu presupuesto sin compromiso y descubre cómo transformamos tu hogar
             </p>
             
-            <div className="bg-white rounded-xl p-8 max-w-md mx-auto">
-              <form className="space-y-4">
-                <div>
-                  <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Tu nombre"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="600 123 456"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos tu proyecto</label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900"
-                    placeholder="Describe tu proyecto de reforma integral..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors"
-                >
-                  Solicitar presupuesto gratuito
-                </button>
-              </form>
-            </div>
+            <StandardContactForm
+              location="Reformas Integrales"
+              placeholder="Describe tu proyecto de reforma integral..."
+            />
           </div>
         </div>
       </section>

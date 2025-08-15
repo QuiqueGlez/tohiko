@@ -2,6 +2,7 @@ import React from 'react'
 import { FaBolt, FaWrench, FaWindows, FaHammer, FaPaintRoller, FaCheckCircle, FaPhone, FaEnvelope } from 'react-icons/fa'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import StandardContactForm from '@/components/ui/StandardContactForm'
 
 const TrabajosComplementariosContent: React.FC = () => {
   return (
@@ -20,9 +21,7 @@ const TrabajosComplementariosContent: React.FC = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block bg-blue-100/20 text-blue-100 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Servicios Especializados
-            </span>
+
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Trabajos <span className="text-blue-300">Complementarios</span><br />
               en Granada
@@ -223,16 +222,16 @@ const TrabajosComplementariosContent: React.FC = () => {
               Ejemplos de Trabajos Realizados
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
                   src="/Images/Fotosreformas/reformas integrales almuñecar.webp" 
                   alt="Trabajos complementarios en Almuñécar" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Almuñécar</h3>
+                    <h3 className="font-bold text-lg">Almuñécar</h3>
                     <p className="text-sm">Trabajos integrales</p>
                   </div>
                 </div>
@@ -242,11 +241,11 @@ const TrabajosComplementariosContent: React.FC = () => {
                 <img 
                   src="/Images/Fotosreformas/reformas integrales la zubia.webp" 
                   alt="Trabajos complementarios en La Zubia" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">La Zubia</h3>
+                    <h3 className="font-bold text-lg">La Zubia</h3>
                     <p className="text-sm">Servicios especializados</p>
                   </div>
                 </div>
@@ -256,11 +255,11 @@ const TrabajosComplementariosContent: React.FC = () => {
                 <img 
                   src="/Images/Fotosreformas/reformas integrales zaidin.webp" 
                   alt="Trabajos complementarios en Zaidín" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Zaidín</h3>
+                    <h3 className="font-bold text-lg">Zaidín</h3>
                     <p className="text-sm">Oficios varios</p>
                   </div>
                 </div>
@@ -268,14 +267,42 @@ const TrabajosComplementariosContent: React.FC = () => {
 
               <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
-                  src="/Images/Fotosreformas/diseño 3d 3.webp" 
-                  alt="Planificación de trabajos complementarios" 
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  src="/Images/Fotosreformas/armario empotrado granada.webp" 
+                  alt="Armario empotrado en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-bold">Planificación</h3>
-                    <p className="text-sm">Diseño previo</p>
+                    <h3 className="font-bold text-lg">Armarios Empotrados</h3>
+                    <p className="text-sm">Carpintería a medida</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/Images/Fotosreformas/reforma entradas granada.webp" 
+                  alt="Reforma de entradas en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Entradas</h3>
+                    <p className="text-sm">Accesos renovados</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <img 
+                  src="/Images/Fotosreformas/reformas dormitorios granada.webp" 
+                  alt="Reformas de dormitorios en Granada" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-bold text-lg">Dormitorios</h3>
+                    <p className="text-sm">Espacios personalizados</p>
                   </div>
                 </div>
               </div>
@@ -345,106 +372,10 @@ const TrabajosComplementariosContent: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nombre completo *
-                    </label>
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Tu nombre"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
-                      Teléfono *
-                    </label>
-                    <input
-                      type="tel"
-                      id="telefono"
-                      name="telefono"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                      placeholder="Tu teléfono"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="tu@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="servicios" className="block text-sm font-medium text-gray-700 mb-2">
-                    Servicios que necesitas
-                  </label>
-                  <select
-                    id="servicios"
-                    name="servicios"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                  >
-                    <option value="">Selecciona los servicios</option>
-                    <option value="electricidad">Electricidad</option>
-                    <option value="fontaneria">Fontanería</option>
-                    <option value="ventanas">Ventanas PVC/Aluminio</option>
-                    <option value="herreria">Herrería</option>
-                    <option value="pladur">Pladur y Yeso</option>
-                    <option value="pintura">Pintura</option>
-                    <option value="varios">Varios servicios</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-2">
-                    Describe tu proyecto
-                  </label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="Cuéntanos qué necesitas..."
-                  ></textarea>
-                </div>
-
-                <div className="text-center">
-                  <button
-                    type="submit"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                  >
-                    Solicitar Presupuesto Gratuito
-                  </button>
-                </div>
-              </form>
-
-              <div className="mt-8 pt-8 border-t border-gray-200">
-                <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                  <a href="tel:+34958123456" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                    <FaPhone className="mr-2" />
-                    <span>958 123 456</span>
-                  </a>
-                  <a href="mailto:info@reformasgranadapro.com" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                    <FaEnvelope className="mr-2" />
-                    <span>info@reformasgranadapro.com</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <StandardContactForm
+              location="Trabajos Complementarios"
+              placeholder="Describe qué trabajos complementarios necesitas (electricidad, fontanería, ventanas, herrería, pladur, pintura...)..."
+            />
           </div>
         </div>
       </section>
